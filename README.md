@@ -33,34 +33,51 @@ We used the K-Means Clustering algorithm to segment the customers based on their
         burned_count
         recency_days
 
-    Clustering: We applied the K-Means algorithm with 3 clusters after testing various configurations and evaluating them using the silhouette score.
+    Clustering: We applied the K-Means algorithm with 3 clusters after testing 
+        various configurations and evaluating them using the silhouette score.
 
-    Dimensionality Reduction: We used Principal Component Analysis (PCA) to visualize the clusters in a two-dimensional space and better understand customer groupings.
+    Dimensionality Reduction: We used Principal Component Analysis (PCA) to visualize 
+        the clusters in a two-dimensional space and better understand customer groupings.
 
 Evaluation Metrics
 
 To evaluate the performance of the clustering, we used the following metric:
 
-    Silhouette Score: This metric measures how well each point lies within its cluster. The score ranges from -1 to 1, where a higher score indicates better-defined clusters. A score of 0.62 was achieved, suggesting a good clustering outcome.
+    Silhouette Score: This metric measures how well each point lies within its cluster. 
+    The score ranges from -1 to 1, where a higher score indicates better-defined clusters. 
+    A score of 0.72 was achieved, suggesting a good clustering outcome.
 
 Key Findings
 
 The K-Means clustering algorithm identified three distinct customer segments:
+| 	Cluster	 | 	Customer Behavior	 | 	Coupon Strategy	 | Goal	 |
+| 	:-----:	 | 	:-----:	 | 	:-----:	 | :-----:	 |
+| 	Cluster 0	| 	High engagement, frequent transactions and coupon use	| 	Exclusive loyalty coupons, spend more/save more, referral incentives, birthday coupons	 | Retain loyalty and deepen engagement	 |
+| 	Cluster 1	| 	Previously active but now dormant	| 	Win-back coupons, limited-time offers, reactivation bundles, personalized recommendations | Reactivate dormant customers	 |
+| 	Cluster 2	| 	Low engagement or new customers	| 	Welcome offers, small purchase incentives, free shipping, second-purchase offers	 | Convert low-engagement customers into regulars	 |
+
 Cluster 0: High-Engagement Customers
 
-    Behavior: Customers in this group frequently make transactions and redeem coupons. They have a low recency, meaning they’ve made purchases recently.
-    Recommendation: These customers should be prioritized for loyalty rewards and exclusive offers to maintain their high engagement.
+    Behavior: Customers in this group frequently make transactions and redeem coupons.
+        They have a low recency, meaning they’ve made purchases recently.
+    Recommendation: These customers should be prioritized for loyalty rewards 
+        and exclusive offers to maintain their high engagement.
 
 Cluster 1: Previously Active but Dormant Customers
 
-    Behavior: These customers were once active but have become less engaged over time. Their last transaction was a long time ago.
-    Recommendation: Use win-back campaigns with significant discounts and time-sensitive offers to re-engage this group.
+    Behavior: These customers were once active but have become less engaged over time.
+        Their last transaction was a long time ago.
+    Recommendation: Use win-back campaigns with significant discounts and 
+        time-sensitive offers to re-engage this group.
 
 Cluster 2: Low-Engagement or New Customers
 
     Behavior: These customers are either new or infrequent shoppers with few transactions and low coupon engagement.
-    Recommendation: Encourage more frequent purchases through welcome offers, small purchase incentives, and free shipping.
+    Recommendation: Encourage more frequent purchases through welcome offers, 
+        small purchase incentives, and free shipping.
 
 Conclusion
 
 The customer segmentation provided insights into distinct customer behaviors. By targeting each segment with tailored coupon strategies, we can potentially boost customer loyalty and overall satisfaction. Future steps involve implementing and tracking the effectiveness of these strategies in real-time.
+
+ 
